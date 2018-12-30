@@ -32,8 +32,8 @@ $ cd `kpsewhich -var-value=TEXMFHOME`
 /home/USER/texmf/tex/latex$ git clone https://github.com/dsenften/latex-macro-collection.git
 ```
 	
-5) Check to see if gitdags.sty (one of the modules) can be seen by TeX	
+5) Check to see if tikz-uml.sty (one of the modules) can be seen by TeX	
 
 ```shell
-$ kpsewhich xcolor-solarized.sty
+$ kpsewhich tikz-uml.sty
 ```
