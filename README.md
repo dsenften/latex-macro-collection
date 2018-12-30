@@ -14,9 +14,11 @@ $ kpsewhich -var-value=TEXMFHOME
 
 2) Create a tex/latex directory in this location:
 
-    $ cd `kpsewhich -var-value=TEXMFHOME`
-    /home/USER/texmf$ mkdir tex
-    /home/USER/texmf$ mkdir tex/latex
+```shell
+$ cd `kpsewhich -var-value=TEXMFHOME`
+/home/USER/texmf$ mkdir tex
+/home/USER/texmf$ mkdir tex/latex
+```
 
 3) Change to the new tex/latex directory
 
