@@ -22,12 +22,12 @@ $ cd `kpsewhich -var-value=TEXMFHOME`
 
 3) Change to the new tex/latex directory
 
-    /home/USER/texmf/tex/latex$ cd tex/latex
+`/home/USER/texmf/tex/latex$ cd tex/latex`
 	
 4) Use git to clone the repository
 
-    /home/USER/texmf/tex/latex$ git clone https://github.com/dsenften/latex-macro-collection.git
+`/home/USER/texmf/tex/latex$ git clone https://github.com/dsenften/latex-macro-collection.git`
 	
 5) Check to see if gitdags.sty (one of the modules) can be seen by TeX	
 
-    $ kpsewhich xcolor-solarized.sty	
+`$ kpsewhich xcolor-solarized.sty`
