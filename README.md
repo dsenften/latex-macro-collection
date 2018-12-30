@@ -7,8 +7,8 @@ The easiest way to install package files is to place them on your TeX search pat
 
 1) Create a default directory on your TeX search path:
 
-    $ kpsewhich -var-value=TEXMFHOME
-    /home/USER/texmf
+```$ kpsewhich -var-value=TEXMFHOME
+/home/USER/texmf```
 
 2) Create a tex/latex directory in this location:
 
