@@ -22,13 +22,6 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
-\RequirePackage[ngerman]{babel}
-\selectlanguage{ngerman}
-
-\RequirePackage{minted}
-\RequirePackage{filecontents}
-\RequirePackage{graphicx}
-\RequirePackage{fancyhdr} % Headings
 \RequirePackage[T1]{fontenc}
 \RequirePackage{fontspec}
 %\RequirePackage[utf8]{inputenc} % Use utf-8 encoding for foreign characters
@@ -59,24 +52,24 @@
 \RequirePackage{relsize,fancyvrb}
 \RequirePackage{multicol,multirow}
 
-\RequirePackage{tikz}
-\RequirePackage{tikz-uml}
-\RequirePackage{amssymb}
+\RequirePackage{talent-factory}
 
-\newcommand\image[2]{%
-  \begin{figure}[ht]
-	\centering		
-    \mode<presentation>{\includegraphics[width=10cm]{Images/#1.png}}
-    \mode<article>{\includegraphics[width=12cm]{Images/#1.png}}
-    \mode<article>{\caption{#2}}
-    \label{fig:#1}
-  \end{figure}
+\RequirePackage{gitdags} % https://github.com/Jubobs/gitdags/wiki
+
+\RequirePackage{fancyhdr} % Headings
+\fancyhf{}                % clear all header and footer fields
+
+\fancypagestyle{plain}{%
+  \fancyhead{} % get rid of headers
+  \fancyfoot{} % get rid of footers
+  \renewcommand{\headrulewidth}{0pt} % and the line
 }
 
 \AtBeginDocument{%
   \setmainfont{Verdana}
   \DeclareGraphicsExtensions{.pdf,.jpg,.tif}
   \maketitle
+  \pagestyle{fancy}
   \newpage
   \tableofcontents
   \parindent0em\parskip1em
