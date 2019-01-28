@@ -22,11 +22,12 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
+\RequirePackage{beamerarticle}
+\RequirePackage{caption}
+
 \RequirePackage[T1]{fontenc}
 \RequirePackage{fontspec}
-%\RequirePackage[utf8]{inputenc} % Use utf-8 encoding for foreign characters
 \RequirePackage{listings} % Package for including code in the document
-\RequirePackage{beamerarticle} 
 
 \RequirePackage{xcolor}
 \DefineNamedColor{named}{Pantone}{cmyk}{55,15,0,0}
@@ -40,12 +41,6 @@
 \RequirePackage{verbatim}
 \RequirePackage{lastpage} % Last page reference
 \RequirePackage{subfig}
-\RequirePackage[colorlinks = true,
-                linkcolor = black,
-                urlcolor  = blue,
-                citecolor = blue,
-                anchorcolor = blue]{hyperref}
-\RequirePackage[answerdelayed,lastexercise]{exercise}
 
 \RequirePackage{longtable} % Making multipage tabulars
 \RequirePackage{supertabular}
@@ -71,7 +66,9 @@
   \maketitle
   \pagestyle{fancy}
   \newpage
-  \tableofcontents
+  \tableofcontents % Inhaltsverzeichnis
+  \listoffigures   % Abbildungsverzeichnis
+  \listoftables    % Tabellenverzeichnis
   \parindent0em\parskip1em
   \newpage}
 
