@@ -33,7 +33,7 @@
 \DefineNamedColor{named}{Pantone}{cmyk}{55,15,0,0}
 
 \RequirePackage[top=3cm,bottom=2cm,left=2cm,right=1.5cm,headsep=10pt,a4paper]{geometry} % Page margins
-    
+
 \RequirePackage{boxedminipage} % Surround parts of graphics with box
 \RequirePackage{nextpage}
 \RequirePackage{times}
@@ -59,18 +59,6 @@
   \fancyfoot{} % get rid of footers
   \renewcommand{\headrulewidth}{0pt} % and the line
 }
-
-\AtBeginDocument{%
-  \setmainfont{Verdana}
-  \DeclareGraphicsExtensions{.pdf,.jpg,.tif}
-  \maketitle
-  \pagestyle{fancy}
-  \newpage
-  \tableofcontents % Inhaltsverzeichnis
-  \listoffigures   % Abbildungsverzeichnis
-  \listoftables    % Tabellenverzeichnis
-  \parindent0em\parskip1em
-  \newpage}
 
 \parindent0em
 
