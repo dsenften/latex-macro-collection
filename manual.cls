@@ -60,6 +60,14 @@
   \renewcommand{\headrulewidth}{0pt} % and the line
 }
 
+\AtBeginDocument{%
+  \DeclareGraphicsExtensions{.pdf,.jpg,.tif}
+  \maketitle
+  \newpage
+  \tableofcontents
+  \parindent0em\parskip1em
+  \newpage}
+
 \parindent0em
 
 %\renewcommand*\l@section{\@dottedtocline{1}{1.5em}{2.3em}}
