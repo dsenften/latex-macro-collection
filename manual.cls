@@ -62,4 +62,10 @@
 
 \parindent0em
 
+%\renewcommand*\l@section{\@dottedtocline{1}{1.5em}{2.3em}}
+\renewcommand*\l@subsection{\@dottedtocline{2}{1.5em}{3.2em}}
+%\renewcommand*\l@subsubsection{\@dottedtocline{3}{7.0em}{4.1em}}
+%\renewcommand*\l@paragraph{\@dottedtocline{4}{10em}{5em}}
+%\renewcommand*\l@subparagraph{\@dottedtocline{5}{12em}{6em}}
+
 \endinput
